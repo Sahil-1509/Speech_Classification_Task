@@ -25,53 +25,43 @@ According to the assignment:
 
 ## Repository Structure
 
-my_project/
-│
-├── data_manifest.csv
-├── Dockerfile
-├── docker-compose.yml
-├── requirements.txt
-├── README.md
-│
-├── src/
-│   ├── init.py
-│   ├── preprocess.py
-│   ├── training.py
-│   ├── training_wave2vec2.py
-│   ├── testing_YAMNet.py
-│   ├── ensemblemodel.py     # Contains the final ensemble inference logic
-│   ├── pipeline.ipynb       # Demonstration or pipeline notebook
-│   └── …
-│
-├── models/
-│   ├── yamnet_finetuned.h5
-│   ├── wav2vec2_finetuned/  # Directory containing PyTorch model checkpoint
-│   └── …
-│
-├── notebooks/
-│   ├── code_1.ipynb
-│   └── …
-│
-├── preprocessed_data/
-│   └── …
-│
-├── processed_audio/
-│   └── …
-│
-├── temporal_workflow/
-│   ├── worker.py            # Defines Temporal worker & activities
-│   ├── workflow.py          # Defines Temporal workflow
-│   └── client.py            # Triggers workflow executions
-│
-└── plots/
-├── classification_report_yamnet.pdf
-├── ensemble_classification_report.pdf
-├── ensemble_roc_curves.pdf
-├── loss_accuracy_curves_yamnet.pdf
-├── loss_accuracy_curves_wav2vec2.pdf
-└── …
+my_project/ \
+│ \
+├── data_manifest.csv  \
+├── Dockerfile \
+├── docker-compose.yml \
+├── requirements.txt \
+├── README.md \
+│ \
+├── src/ \
+│   ├── init.py \
+│   ├── preprocess.py \
+│   ├── training.py \
+│   ├── training_wave2vec2.py \
+│   ├── testing_YAMNet.py \
+│   ├── ensemblemodel.py     # Contains the final ensemble inference logic \
+│ \
+├── models/  \
+│   ├── yamnet_finetuned.h5 \
+│   ├── wav2vec2_finetuned/  # Directory containing PyTorch model checkpoint \
+│ \
+├── preprocessed_data/  \
+│   └── preprocessed_audio \
+│ \
+├── temporal_workflow/ \
+│   ├── worker.py            # Defines Temporal worker & activities \
+│   ├── workflow.py          # Defines Temporal workflow \
+│   └── client.py            # Triggers workflow executions \
+│  \
+└── plots/ \
+├── classification_report_yamnet.pdf \
+├── ensemble_classification_report.pdf \
+├── ensemble_roc_curves.pdf \
+├── loss_accuracy_curves_yamnet.pdf \
+├── loss_accuracy_curves_wav2vec2.pdf \
+└── … \
 
----
+--- \
 
 ## Data Acquisition & Preprocessing
 
