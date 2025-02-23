@@ -1,0 +1,10 @@
+tensorflow
+tensorflow-hub
+temporalio
+numpy
+pandas
+librosa
+torch
+transformers
+scikit-learn
+matplotlib

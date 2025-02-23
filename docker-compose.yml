@@ -1,0 +1,33 @@
+version: "3.8"
+
+services:
+  worker:
+    build: .
+    container_name: temporal_worker
+    command: python temporal_workflow/worker.py
+    volumes:
+      - .:/app
+    ports:
+      - "5000:5000"  # if your worker exposes a port, adjust accordingly
+    environment:
+      - ENV=development
+
+  client:
+    build: .
+    container_name: temporal_client
+    command: python temporal_workflow/client.py
+    volumes:
+      - .:/app
+    depends_on:
+      - worker
+    environment:
+      - ENV=development
+
+  workflow:
+    build: .
+    container_name: temporal_workflow
+    command: python temporal_workflow/workflow.py
+    volumes:
+      - .:/app
+    environment:
+      - ENV=development
