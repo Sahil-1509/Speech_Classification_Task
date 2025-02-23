@@ -157,8 +157,8 @@ Implementation can be found in `src/ensemblemodel.py`.
 - The ensemble ROC curves are in [`plots/ensemble_roc_curves.pdf`](./plots/ensemble_roc_curves.pdf). Each class (cry, scream, normal) is plotted separately.
 
 ### Accuracy Of The Models
-- Wav2Vec2 model accuracy-94%
-- YAMNet model accuracy - 75%
+- Wav2Vec2 model accuracy-91%
+- YAMNet model accuracy - 70%
 - Ensemble Model accuracy - 97%
 
 > **Overall**, the ensemble model typically outperforms individual models, showing higher recall for cry and scream classes and balanced precision for normal utterances.
