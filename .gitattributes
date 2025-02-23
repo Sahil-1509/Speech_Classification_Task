@@ -1,0 +1,2 @@
+models/wav2vec2_finetuned1/model.safetensors filter=lfs diff=lfs merge=lfs -text
+models/wav2vec2_finetuned1/model.safetensors filter=lfs diff=lfs merge=lfs -text
